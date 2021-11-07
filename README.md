@@ -8,3 +8,6 @@ Note: The "person-detector" folder would contain the darknet installation with t
 Made with darknet and YOLOv3, and with the help of the following, which provided the pre-trained models: 
 - https://www.pyimagesearch.com/2020/06/01/opencv-social-distancing-detector/
 - https://www.pyimagesearch.com/2020/05/04/covid-19-face-mask-detector-with-opencv-keras-tensorflow-and-deep-learning/
+
+## Calibration Procedure
+The camera is calebrated with a checkerboard pattern. To calibrate, the checkerboard square length, and distance of the checkerboard need to be set in the `main.py` file before calibration. Then, the checkerboard needs to be held at the specified distance away from the camera, and images need to be captured until OpenCV can find sufficiently many reference points to accurately map the checkerboard.
