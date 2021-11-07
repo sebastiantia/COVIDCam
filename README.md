@@ -11,3 +11,5 @@ Made with darknet and YOLOv3, and with the help of the following, which provided
 
 ## Calibration Procedure
 The camera is calebrated with a checkerboard pattern. To calibrate, the checkerboard square length, and distance of the checkerboard need to be set in the `main.py` file before calibration. Then, the checkerboard needs to be held at the specified distance away from the camera, and images need to be captured until OpenCV can find sufficiently many reference points to accurately map the checkerboard.
+
+This must be done the first time the program is run, however need not be done subsequent times (it's advisable to recalibrate for a different camera) since the callibration value is saved in the `saved_const.txt` file; there is always an option to recalibrate the program.
